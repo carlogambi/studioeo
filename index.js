@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 const router = require('./routes/router');
+console.log(__dirname);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(`${__dirname}/public`));
