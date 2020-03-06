@@ -1,0 +1,18 @@
+
+.galleryContainer{
+  overflow: hidden;
+}
+.slider {
+  height: inherit;
+  display: flex;
+}
+.slider img {
+  height: inherit;
+}
+.galleryButtons{
+  font-family: sans-serif;
+  font-size: 7vh;
+  font-weight: 800;
+  color: black;
+  cursor: context-menu;
+}

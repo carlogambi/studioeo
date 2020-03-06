@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style media="screen">
+    #gal {
+
+      height: 27vh;
+      width: 60%;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 0;
+
+    }
+    #gal > * {
+
+      font-size:      1rem;
+      display:        inline-block;
+      vertical-align: top;
+      margin-left: 5px;
+      margin-right: 5px;
+      height:         inherit;
+      z-index: 1;
+
+    }
+     #left{
+      position: relative;
+      top: -17vh;
+      left: 2vh;
+      font-size: 5vw;
+      font-family: sans-serif;
+      font-weight: bolder;
+      cursor: context-menu;
+
+    }
+     #right{
+       position: relative;
+           top: -17vh;
+           right: -53%;
+           font-size: 5vw;
+           font-family: sans-serif;
+           font-weight: bolder;
+           cursor: context-menu;
+
+    }
+
+    #right::selection {
+    color: none;
+    background: none;
+    }
+    /* For Mozilla Firefox */
+    #right::-moz-selection {
+    color: none;
+    background: none;
+    }
+    #left::selection {
+    color: none;
+    background: none;
+    }
+    /* For Mozilla Firefox */
+    #left::-moz-selection {
+    color: none;
+    background: none;
+    }
+
+  </style>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="gallery">
+  <div id="gal">
+    <img id="1" src="../img/mostre/disaccordi/gallery/1.JPG" alt="">
+    <img id="2" src="../img/mostre/disaccordi/gallery/2.JPG" alt="">
+    <img id="3" src="../img/mostre/disaccordi/gallery/3.JPG" alt="">
+    <img id="4" src="../img/mostre/disaccordi/gallery/4.JPG" alt="">
+    <img id="5" src="../img/mostre/disaccordi/gallery/5.JPG" alt="">
+
+  </div>
+  <span id="left" ><</span>
+  <span id="right" >></span>
+</div>
+
+  <script>
+  function main(){
+    var ancestor = document.getElementById('gal'),
+    descendents = ancestor.getElementsByTagName('*');
+    var elementi = Array.from(descendents);
+    var totalWidth = 0;
+
+    for( i = 1; i <= elementi.length; i++){ totalWidth = totalWidth + $("#"+i).outerWidth(true); }
+    console.log(totalWidth);
+    totalWidth = totalWidth - $("#gal").innerWidth();
+    console.log(totalWidth);
+    var GAL = $("#gal"),
+        n = GAL.find(">*").length;
+        c = 0;
+    var i = 0;
+
+    $('#target').append(n);
+    $("#left").on("click", function(){  if(i > 0 ){  i-=200; GAL.animate({ scrollLeft: i });    }      console.log(i);  });
+    $("#right").on("click", function(){  if(i <= totalWidth ){  i+=200; GAL.animate({ scrollLeft: i });    }      console.log(i);  });
+  }
+    $(window).load(function(){
+    main();
+});
+  </script>
+</body>
+
+</html>

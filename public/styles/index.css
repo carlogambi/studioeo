@@ -1,0 +1,157 @@
+.menu{
+  width: fit-content;
+  padding: 1px;
+  margin: auto;
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  line-height: 7px;
+}
+.voxMenu{
+  width: fit-content;
+  padding: 2%;
+  margin: 22% auto;
+  font-size: x-large;
+}
+
+
+.window{
+  width: 400px;
+  height: 317px;
+  border-style: solid;
+  background-color: white;
+}
+.wContent{
+  max-height: 285px;
+  overflow: auto;
+}
+.close{
+  float: right;
+  margin-right: 2px;
+}
+.wHeader{
+  border-bottom-style: solid;
+  padding: 4px;
+}
+.subBtn{
+  border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.draggable {
+   width: fit-content;
+   height: 50%;
+   background-position: top left;
+   display: inline-block;
+   position: absolute;
+   background-color: white;
+   min-height: 200px;
+   max-height: 3vw;
+ }
+#menuBar{
+    position: fixed;
+    width: 100%;
+    bottom: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+        margin-bottom: 3%;
+}
+ td {
+   padding: 0.7%;
+   width: fit-content;
+   cursor: context-menu;
+}
+.princContainer{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+#menuButton{
+  width: 6%;
+  line-height: 40%;
+}
+#openIcons{
+}
+#openMenu{
+display: none;
+}
+#defMenu{
+  width: 100%
+}
+.window{
+  width: 100%;
+      border-style: solid;
+      border-color: black;
+      cursor: context-menu;
+}
+
+.windowMenu{
+height: 10%;
+    border-top-style: solid;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.windowMenu span {
+
+  padding: 1.6%;
+  margin: 1%;
+}
+
+.icoButton {
+  padding: 0.4%;
+  border-style: solid;
+  margin: 0.2%;
+}
+
+
+#windowIcon{
+  width: 1vw;
+      position: absolute;
+      bottom: -3px;
+      right: 1px;
+      cursor: e-resize;
+}
+
+
+.ui-icon {
+    opacity: 0%;
+  }
+
+
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    background-color: white;
+}
+
+.ui-resizable {
+
+}
+.images{
+  max-width: 2vW;
+}
+
+
+#openMenu{
+margin-left: 2%;
+}
+
+.submenu{
+
+}

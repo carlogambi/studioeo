@@ -1,0 +1,44 @@
+<span class="subBtn" data-folder = "disaccordi">Disaccordi</span >
+<p>
+  collettiva del II anno di Studi Curatoriali, NABA;
+18 luglio 2018
+</p>
+
+<span class="subBtn" data-folder = "orogenesi">Orogenesi Suburbana</span >
+<p>
+  Marco Antelmi , Oliviero Fiorenzi, Manuela Piccolo <br>
+  5 | 7 ottobre 2018
+</p >
+
+<span class="subBtn" data-folder = "scenariSintetici">Scenari Sintetici</span >
+<p>
+  Gioele Villani, Carlo Gambirasio
+ <br>
+06 giugno | 13 giugno  2019
+</p>
+
+<span class="subBtn" data-folder = "monsterOfSaline">  Monster of saline</span >
+<p>
+  Autonomia artistica
+  <br>
+  11 ottobre | 18 ottobre  2019
+</p>
+<script>
+
+  function pagMostra(data){
+    console.log(data);
+    
+  const content = data.tosend;
+  const pictures = (list) => { return list.map((item) => { return '<img src="' + item + '" >'; }).join('<br>');  }
+ return '<p>' + pictures([content.mainPic]) + '<br>' + content.testo + '<br>' + content.download.join("<br>") + '<br>' + pictures(content.gallery)  + '</p>'; 
+}
+  $('.subBtn').click(function () {
+    let title = $(this).text();
+    console.log(title);
+    
+    $.post('/getSubArgument', { arg: $(this).attr('data-folder').toString() }, (data) => {  
+      console.log({data});  
+      WindowManager.creaWindow(  {data: pagMostra(data) }, title); 
+     });
+});
+</script>
