@@ -5,15 +5,22 @@ const router = express.Router();
 const db = require('./miniDb');
 const Menu = require('./menu');
 
+function getFile(path, afterFond){
+  var content;
+  fs.readFile(path, function read(err, data) {
+    if (err) {  throw err; }
+    content = data.toString();
+    afterFond(content);
+});
+ }
 
-
-
+const viewsPath = 'views/';
 
 router.get('/', (req, res) => {
-  res.render('index');
+  getFile(viewsPath + "index.html", (file) => { res.send(file); });
 });
 router.get('/gallery', (req, res) => {
-  res.render('gallery');
+  getFile(viewsPath + "index.html", (file) => { res.send(file); });
 });
 
 router.post('/getVociMenu', (req, res) => {

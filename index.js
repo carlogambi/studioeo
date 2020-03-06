@@ -11,8 +11,6 @@ console.log(__dirname);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(`${__dirname}/public`));
-app.set('views', `${__dirname}/views`);
-app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 
 app.use('/', router);
