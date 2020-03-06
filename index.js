@@ -8,10 +8,12 @@ const app = express();
 
 const router = require('./routes/router');
 
-app.use(bodyParser.urlencoded({ extended: false }))
-.use(express.static(`${__dirname}/public`))
-.set('views', `${__dirname}/Views`)
-.engine('html', engines.mustache)
-.set('view engine', 'html')
-.use('/', router)
-.listen(PORT, () => console.log('listen on port: ' + PORT));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(`${__dirname}/public`));
+app.set('views', `${__dirname}/Views`);
+app.engine('html', engines.mustache);
+app.set('view engine', 'html');
+
+app.use('/', router);
+
+app.listen(PORT, () => console.log('listen on port: ' + PORT));
