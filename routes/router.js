@@ -66,6 +66,7 @@ router.post('/getSubArgument', async (req, res) => {
         tosend.download = data;
         fs.readdir(( `public/img/mostre/${argument}/gallery`), (err, data) => {
           if(err){ console.log(err); }
+          tosend.galleryPath = `public/img/mostre/${argument}/gallery`;
           tosend.gallery = data.map((item) => { return `img/mostre/${argument}/gallery/${item}`; });
           tosend.mainPic = `img/mostre/${argument}/mainPicture.jpg`
           res.json({tosend});

@@ -110,15 +110,15 @@ class Gallery{
 
 
 
-$(window).load(() => {
-  let g = new GalleriesInDom;
-  console.log(g.getGalList());
-  $.post( "../gallery/getimg", { paths: g.getJSONgalList() }, ( response ) => {
-    let toRender = JSON.parse(response);
-    toRender.forEach((item, index) => {
-      TotalGallery.addGal(new Gallery(item, index));
-    });
-    console.log(TotalGallery.getTotGal());
-  });
+// $(window).load(() => {
+//   let g = new GalleriesInDom;
+//   console.log(g.getGalList());
+//   $.post( "../gallery/getimg", { paths: g.getJSONgalList() }, ( response ) => {
+//     let toRender = JSON.parse(response);
+//     toRender.forEach((item, index) => {
+//       TotalGallery.addGal(new Gallery(item, index));
+//     });
+//     console.log(TotalGallery.getTotGal());
+//   });
 
-});
+// });

@@ -1,8 +1,25 @@
+ class InitPosition {
+  static stepTop  = 50;
+  static stepLeft = 20;
+  static left  = 0;
+  static top  = 0;
+  presentWindows = 0;
+  static add(){    
+    this.presentWindows ++;
+    this.left = this.left + this.stepLeft;
+    this.top = this.top + this.stepTop;
+    return { left: this.left, top: this.top };
+  }
+  static remove(){    
+    this.presentWindows --;
+    this.left = this.left - this.stepLeft;
+    this.top = this.top - this.stepTop;
+  }
+}
 
 class WindowManager{
   static windowList = [];
   static zIndxRef = [];
-
   static creaWindow(text, title){
     this.windowList.push(new Window(text, title));
   }
@@ -57,7 +74,7 @@ class Window{
     this.content = content.data;
     this.id = this.title.replace(/ /gi, "_");
     this.id = this.id +  Math.trunc(Math.random()*(Math.pow(10, 7)));
-    this.bricks = `<div id="${this.id}" class="window">
+    this.bricks = `<div id="${this.id}" class="window"  >
                         <div class="wHeader">
                             <span class="title">${this.title}</span>
                             <span class="close" id="${this.id}_cbtn">x</span>
@@ -74,7 +91,11 @@ class Window{
   }
   setLogics(){
     $('#' + this.id).draggable().on('click', () => { WindowManager.manage('onTop', this.id); });
-    $(`#${this.id}_cbtn`).on('click', () => { $('#' + this.id).remove(); console.log('hey'); WindowManager.manage('remove',this.id); });
+    let initPos = InitPosition.add();
+    console.log(initPos);
+    $('#' + this.id).css({ position: 'absolute' , top: initPos.top + 'px', left: initPos.left + 'px'});
+    console.log('altezza: ' + $('#' + this.id + " .wHeader").css('height'));
+    $(`#${this.id}_cbtn`).on('click', () => { InitPosition.remove(); $('#' + this.id).remove(); console.log('hey'); WindowManager.manage('remove',this.id); });
     WindowManager.manage('add',this.id);
 
   }
@@ -120,9 +141,9 @@ class Menu {
   icon;
   voxList = [];
   constructor(voxList){
-    this.bricks = `<div class="${this.class}" >
+    this.bricks = `<div class="${this.class}" align = "center">
                       <div class="${this.voxContainerClass}" align="center"></div>
-                      <div class="menuIcon">_<br>_<br>_<br> </div>
+                      <div class="menuIcon">M</div>
                   </div>`;
     $('body').append(this.bricks);
     voxList.forEach((vox, index) => { this.voxList.push(new VoceMenu(vox, index, this.voxContainerClass)) });
@@ -145,8 +166,6 @@ class Menu {
 
 
 
-
-
 $(window).load(() => {
   $.post( "/getVociMenu", {some:'some'}, ( data ) => {
     let menuVox = JSON.parse(data.menuList);
@@ -155,76 +174,3 @@ $(window).load(() => {
   });
 
 });
-
-//_------------------runtime-----------------------------------------------
-
-
-/*
-$('#menuButton, #upperMenuButton').on('click', () => {
-  let display = $('#openMenu').css('display');
-  if(display == 'none'){
-    $('#openMenu').css({'display': 'inherit'});
-    $('#menuButton').empty().append('x');
-  }else {
-      $('#openMenu').css({'display': 'none'});
-          $('#menuButton').empty().append('_<br>_<br>_<br>');
-  }
-});
-
-
-  let zindex = 10;
-function creaWind(text)  {
-  console.log(text);
-  let id = text+(parseInt(Math.random()*(10000000000000000)));
-  $('#openIcons').append(`
-    <span class="icoButton " id="ico${id}" onclick="$('#${id}').toggle();$('.draggable').css({'z-index': '10'});$('#${id}').css({'z-index': '20'});">
-    ${text}
-    </span>
-    `);
-    let add = '';
-    if(text == 'exhibitions'){ add = 'submenu'; }else{ $('.window').css({  'height': '77vh'})};
-
-  $('body').append(`
-    <div class="draggable ${add}" id="${id}" onclick="$('.draggable').css({'z-index': '10'});$(this).css({'z-index': '20'});">
-      <table class="window">
-      <tr>
-        <td >
-        <div id="windowContent${id}" class="princContainer"align="center">
-        </div>
-
-        </td>
-      </tr>
-        <tr>
-          <td class="windowMenu">
-          <span onclick="$('#${id}').remove();$('#ico${id}').remove()">
-          x</span>
-          <span onclick="$('#${id}').toggle()">
-          -</span>
-          </td>
-        </tr>
-      </table>
-    </div>
-    `);
-    if(add == ''){  $('.window').css({  'height': '77vh'})};
-    zindex+=10;
-    $(`#${id}`).draggable().css({'z-index': '20'});
-    $.post( `/give/${text}`, {test:'test'}, ( data ) => {
-      console.log(data);
-     $(`#windowContent${id}`).append(data.output.meat);
-    });
-    /*
-    switch (text) {
-      case 'about':
-      $.post( "/about", {test:'test'}, ( data ) => {
-      $(`#windowContent${id}`).append(data.output.meat);
-      });
-      case 'exhibitions':
-      $.post( "/exhibitions", {test:'test'}, ( data ) => {
-      //$(`#windowContent${id}`).append(data.output.meat);
-      });
-        break;
-    }
-    *//*
-    return id;
-}
-*/
