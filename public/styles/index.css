@@ -32,7 +32,7 @@ body{
 .voxMenu{
   color: white;
   cursor: context-menu;
-  font-size: 2vw;
+  font-size: 1.2vw;
   width: fit-content;
   background-color: red;
   margin-bottom: 4vw;
@@ -124,12 +124,12 @@ body{
 .menuIcon {
   border-style: solid;
   cursor: context-menu;
-  font-size: 4vw;
+  font-size: 3vw;
   color: red;
   width: fit-content;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   line-height: 93%;
-  padding: 27%;
+  padding: 21%;
 }
 
 .wContent div {
