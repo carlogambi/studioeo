@@ -1,5 +1,16 @@
+@font-face {
+  font-family: 'Sans Forgetica Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sans Forgetica Regular'), url('../fonts/SansForgetica-Regular.woff') format('woff');
+  }
+
+
+
+
+
 body{
-  font-family: 'Grenze', serif;
+  font-family:'Sans Forgetica Regular';
   font-size: 1.3vw;
   background-image: url(../sfondo.jpg);
   background-repeat: no-repeat;
@@ -19,9 +30,14 @@ body{
   /* line-height: 7px;*/
 }
 .voxMenu{
+  color: white;
+  cursor: context-menu;
+  font-size: 2vw;
   width: fit-content;
-  padding: 2%;
-  /* margin: 22% auto; */
+  background-color: red;
+  margin-bottom: 4vw;
+  padding: 16%;
+  /* margin: 22% auto;*/
 }
 
 
@@ -30,10 +46,13 @@ body{
   position: absolute;
   width: 59%;
   height: 600px;
+  /* opacity: 96%; */
   border-style: solid;
   background-color: white;
 }
+
 .wContent{
+  font-family: 'Poppins', sans-serif;
   max-height: 285px;
   overflow: auto;
   max-height: 545px;
@@ -42,8 +61,11 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-  width: 15px;
-  background-color: wheat;
+  width: 11px;
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: thick;
 }
 
 /* Track */
@@ -54,44 +76,56 @@ body{
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black; 
+  background: black;
+    border-style: solid;
+    border-width: thick;
+    border-color: white; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: white; 
+  background: red;
+    border-style: solid;
+    border-width: thick;
+    border-color: white; 
 }
 
 
 .close{
   float: right;
   margin-right: 2px;
+  cursor: context-menu;
 }
 .wHeader{
   border-bottom-style: solid;
   padding: 4px;
   font-size: 2vw;
+  cursor: grab;
 }
 .wHeader:hover{
-  color: wheat;
-  background-color: black;
+  color: white;
+  background-color: red;
 }
 .subBtn{
-  border-style: solid;
-  font-size: 2vw;
+  font-family: Sans Forgetica;
+  /* border-style: solid; */
+  font-size: 1.7vw;
   cursor: context-menu;
   padding: 0.4vw;
-  text-decoration: overline;
-  text-decoration-color: black;
-  border-color: black;
+  /* text-decoration: overline; */
+  /* text-decoration-color: black; */
+  /* border-color: black; */
   color: black;
 }
 .subBtn:hover{
-  color: wheat;
-  background-color: black;
+  color: white;
+  background-color: red;
 }
 .menuIcon {
   border-style: solid;
+  cursor: context-menu;
+  font-size: 4vw;
+  color: red;
   width: fit-content;
   border-radius: 100%;
   line-height: 93%;
