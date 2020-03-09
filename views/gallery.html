@@ -95,7 +95,6 @@
         c = 0;
     var i = 0;
 
-    $('#target').append(n);
     $("#left").on("click", function(){  if(i > 0 ){  i-=200; GAL.animate({ scrollLeft: i });    }      console.log(i);  });
     $("#right").on("click", function(){  if(i <= totalWidth ){  i+=200; GAL.animate({ scrollLeft: i });    }      console.log(i);  });
   }

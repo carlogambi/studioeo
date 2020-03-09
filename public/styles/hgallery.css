@@ -16,3 +16,63 @@
   color: black;
   cursor: context-menu;
 }
+
+#gal {
+
+  height: 27vh;
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+
+}
+#gal > * {
+
+  font-size:      1rem;
+  display:        inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  margin-right: 5px;
+  height:         inherit;
+  z-index: 1;
+
+}
+ #left{
+  position: relative;
+  top: -17vh;
+  left: 2vh;
+  font-size: 5vw;
+  font-family: sans-serif;
+  font-weight: bolder;
+  cursor: context-menu;
+
+}
+ #right{
+   position: relative;
+       top: -17vh;
+       right: -53%;
+       font-size: 5vw;
+       font-family: sans-serif;
+       font-weight: bolder;
+       cursor: context-menu;
+
+}
+
+#right::selection {
+color: none;
+background: none;
+}
+/* For Mozilla Firefox */
+#right::-moz-selection {
+color: none;
+background: none;
+}
+#left::selection {
+color: none;
+background: none;
+}
+/* For Mozilla Firefox */
+#left::-moz-selection {
+color: none;
+background: none;
+}

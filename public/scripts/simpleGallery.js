@@ -1,15 +1,22 @@
 // tag to put in html <div style="width: 50vw; height: 20vh" data-path= "gallery/folder's/path/inside/public/folder" data-arrow-color="white" class="galleryContainer" id="galleryN1" ></div>
 class GalleriesInDom{
-  galList = [];
-  constructor(){
+   static counter = 0;
+  static galList = [];
+  static refresh(){
+    console.log('called refresh gall list');
+    
     $(`div[ class = "galleryContainer" ]`).each((index, el) => {
       let id = '#galleryN'+(index+1);
       let path = $(id).attr('data-path');
       this.galList.push({id, path });
     });
   }
-  getGalList(){ return this.galList; }
-  getJSONgalList(){ return JSON.stringify(this.galList) }
+  static getGalList(){ return this.galList; }
+  static getJSONgalList(){ return JSON.stringify(this.galList) }
+  static getCounter(){
+    this.counter++;
+    return this.counter;
+  }
 }
 
 
@@ -33,6 +40,10 @@ class Gallery{
   buttons = {};
   arrowsColor;
    constructor(oneGal, indexGal){
+     console.log({oneGal});
+     
+     console.log({oneGal: oneGal, indexGal: indexGal});
+     
     this.data.id = oneGal.id;
     this.data.imgList = oneGal.files;
     this.data.path = oneGal.path;
@@ -106,19 +117,3 @@ class Gallery{
      this.buttons.right.style.cssText = rBtnStyle;
    }
 }
-
-
-
-
-// $(window).load(() => {
-//   let g = new GalleriesInDom;
-//   console.log(g.getGalList());
-//   $.post( "../gallery/getimg", { paths: g.getJSONgalList() }, ( response ) => {
-//     let toRender = JSON.parse(response);
-//     toRender.forEach((item, index) => {
-//       TotalGallery.addGal(new Gallery(item, index));
-//     });
-//     console.log(TotalGallery.getTotGal());
-//   });
-
-// });

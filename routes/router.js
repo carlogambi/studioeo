@@ -63,6 +63,27 @@ router.post('/getSubArgument', async (req, res) => {
       tosend.testo = data.toString();
       fs.readdir(( `public/img/mostre/${argument}/download`), (err, data) => {
         if(err){ console.log(err); }
+        tosend.download = data.map((item) => { return {name: item, path: `img/mostre/${argument}/download/${item}`} });
+        fs.readdir(( `public/img/mostre/${argument}/gallery`), (err, data) => {
+          if(err){ console.log(err); }
+          tosend.galleryPath = `public/img/mostre/${argument}/gallery`;
+          tosend.gallery = data.map((item) => { return `img/mostre/${argument}/gallery/${item}`; });
+          tosend.mainPic = `img/mostre/${argument}/mainPicture.jpg`
+          res.json({tosend});
+        });
+      });
+  });
+
+});
+
+router.post('/getSubArgument', async (req, res) => {
+  const argument = req.body.arg;
+  const tosend = {};
+  fs.readFile( `public/img/mostre/${argument}/testo.txt`, (err, data) => {
+    if(err){ console.log(err); }
+      tosend.testo = data.toString();
+      fs.readdir(( `public/img/mostre/${argument}/download`), (err, data) => {
+        if(err){ console.log(err); }
         tosend.download = data;
         fs.readdir(( `public/img/mostre/${argument}/gallery`), (err, data) => {
           if(err){ console.log(err); }
@@ -74,6 +95,13 @@ router.post('/getSubArgument', async (req, res) => {
       });
   });
 
+});
+
+router.post('/getImgList', async (req, res) => {
+  const galleryFolder = req.body.galleryFolder;
+  fs.readdir(galleryFolder, (err, data) => {
+    res.json({data});
+  });
 });
 
 

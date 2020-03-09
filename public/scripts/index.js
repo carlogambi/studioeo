@@ -1,7 +1,7 @@
  class InitPosition {
-  static stepTop  = 50;
-  static stepLeft = 20;
-  static left  = 0;
+  static stepTop  = 30;
+  static stepLeft = 40;
+  static left  = 100;
   static top  = 0;
   presentWindows = 0;
   static add(){    
@@ -79,7 +79,7 @@ class Window{
                             <span class="title">${this.title}</span>
                             <span class="close" id="${this.id}_cbtn">x</span>
                         </div>
-                        <div class="wContent">
+                        <div class="wContent" align= "center">
                         ${this.content}
                         </div>
                     </div>`;
