@@ -20,7 +20,7 @@ body{
   width: fit-content; 
   /* padding: 1px; */
   margin: auto;
-  position: fixed;
+  position: absolute;
   bottom: 5%;
   left: 3%;
   z-index: 1000;
