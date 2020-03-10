@@ -11,11 +11,11 @@ function isMobile() {
  
  
  class InitPosition {
-  static stepTop  = 40;
-  static stepLeft = 20;
-  static left  = 100;
-  static top  = 0;
-  presentWindows = 0;
+  static stepTop  = 40
+  static stepLeft = 20
+  static left  = 100
+  static top  = 0
+  presentWindows = 0
   static add(){    
     this.presentWindows ++;
     this.left = this.left + this.stepLeft;
