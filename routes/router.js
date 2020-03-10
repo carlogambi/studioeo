@@ -22,6 +22,9 @@ router.get('/', (req, res) => {
 router.get('/gallery', (req, res) => {
   getFile(viewsPath + "index.html", (file) => { res.send(file); });
 });
+router.get('/provaTouch', (req, res) => {
+  getFile(viewsPath + "provatouch.html", (file) => { res.send(file); });
+});
 
 router.post('/getVociMenu', (req, res) => {
   let getVociMenu = new Promise((resolve, reject) => {

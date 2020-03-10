@@ -6,9 +6,12 @@
   }
 
 
+
+
+
 body{
-  font-family:'Sans Forgetica Regular';
-  font-size: 1.3vw;
+  font-family: 'Sans Forgetica Regular';
+  font-size: 2.3vw;
   background-image: url(../sfondo.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -29,7 +32,7 @@ body{
 .voxMenu{
   color: white;
   cursor: context-menu;
-  font-size: 1.2vw;
+  font-size: 3.2vw;
   width: fit-content;
   background-color: red;
   margin-bottom: 4vw;
@@ -41,8 +44,8 @@ body{
 
 .window{
   position: absolute;
-  width: 59%;
-  height: 600px;
+  width: 73%;
+  height: 1161px;
   /* opacity: 96%; */
   border-style: solid;
   background-color: white;
@@ -52,7 +55,7 @@ body{
   font-family: 'Poppins', sans-serif;
   max-height: 285px;
   overflow: auto;
-  max-height: 545px;
+  max-height: 1080px;
   padding-left: 3vw;
 }
 
@@ -96,7 +99,7 @@ body{
 .wHeader{
   border-bottom-style: solid;
   padding: 4px;
-  font-size: 2vw;
+  font-size: 5vw;
   cursor: grab;
 }
 .wHeader:hover{
@@ -106,7 +109,7 @@ body{
 .subBtn{
   font-family: Sans Forgetica;
   /* border-style: solid; */
-  font-size: 1.7vw;
+  font-size: 3.7vw;
   cursor: context-menu;
   padding: 0.4vw;
   /* text-decoration: overline; */
@@ -121,7 +124,7 @@ body{
 .menuIcon {
   border-style: solid;
   cursor: context-menu;
-  font-size: 3vw;
+  font-size: 7vw;
   color: red;
   width: fit-content;
   /* border-radius: 100%; */
@@ -141,10 +144,11 @@ body{
 }
 
 .mainPic{
-  width: 60%;
+  margin-top: 4%;
+  width: 97%;
 }
 .galPic{
-  width: 65%;
+  width: 97%;
 }
 a{
   text-decoration: none;
@@ -153,7 +157,7 @@ a{
   column-count: 1;
   padding-right: 4vw;
   padding-left: 2vw;
-  font-size: 1vw;
+  font-size: 2.5vw;
   font-family: 'Poppins', sans-serif;
-  line-height: 1.2vw;
+  line-height: 3.2vw;
 }
