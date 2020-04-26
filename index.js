@@ -1,18 +1,18 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const engines = require('consolidate');
+const app = express();
+const http = require('http').createServer(app);
+const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 
-const app = express();
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'views', 'index.html'));
+});
 
-const router = require('./routes/router');
-console.log(__dirname);
+app.use(express.static(path.resolve(__dirname, 'dist')));
+app.use(express.static(path.resolve(__dirname, 'libs')));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(`${__dirname}/public`));
-app.set('view engine', 'html');
-console.log('HHHHHHHHHHHHHHHHHHEEEEEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYYYYYYYYYYYYY');
-app.use('/', router);
-
-app.listen(PORT, () => console.log('listen on port: ' + PORT));
+http.listen(PORT, () => {
+console.log('ready to listen on port ' + PORT);
+});
