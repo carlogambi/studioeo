@@ -12,7 +12,7 @@ console.log(__dirname);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(`${__dirname}/public`));
 app.set('view engine', 'html');
-
+console.log('HHHHHHHHHHHHHHHHHHEEEEEEEEEEEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYYYYYYYYYYYYY');
 app.use('/', router);
 
 app.listen(PORT, () => console.log('listen on port: ' + PORT));
