@@ -170,7 +170,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"@media only screen and (max-width: 768px) {\\r\\n    #about{\\r\\n        top: 69%;\\r\\n        left: 6%;\\r\\n    }\\r\\n    #exhib{\\r\\n        top: 10%;\\r\\n        left: 50%;\\r\\n    }\\r\\n    #gVillani{\\r\\n        top: 49%;\\r\\n        left: 4%;\\r\\n    }\\r\\n    #mailList{\\r\\n        top: 78%;\\r\\n        left: 55%;\\r\\n    }\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/desktopIcons/positionsSm.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"@media only screen and (max-width: 768px) {\\r\\n    #about{\\r\\n        top: 69%;\\r\\n        left: 6%;\\r\\n    }\\r\\n    #exhib{\\r\\n        top: 10%;\\r\\n        left: 50%;\\r\\n    }\\r\\n    #gVillani{\\r\\n        top: 3%;\\r\\n        left: 4%;\\r\\n    }\\r\\n    #mailList{\\r\\n        top: 78%;\\r\\n        left: 55%;\\r\\n    }\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/desktopIcons/positionsSm.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
