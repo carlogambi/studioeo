@@ -1,5 +1,5 @@
 {
-  "name": "studioeo",
+  "name": "studioeoV3",
   "version": "3.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "validator": "^13.0.0"
   }
 }

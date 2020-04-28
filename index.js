@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
 const path = require('path');
+const mailinglistManager = require('./mailinglist/mailmanager')
 
 const PORT = process.env.PORT || 3000;
 
@@ -20,6 +21,12 @@ let exhibWinContent;
 app.post('/exhibPageMobile', (req, res) => {
     exhibWinContent = req.body.arg; 
     res.json({done: true});   
+});
+
+app.post('/addMail', (req, res) => {
+    const {email} = req.body;
+    mailinglistManager({req, res, email})
+
 });
 
 app.get('/exhibition', (req, res) => {

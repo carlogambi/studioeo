@@ -152,6 +152,17 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/desktopIcons/icons/mailingList.css":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/desktopIcons/icons/mailingList.css ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".addMailForm {\\r\\n    margin: 3vw;\\r\\n    line-height: 5vw;\\r\\n}\\r\\n\\r\\n.addMailForm #emailInput{\\r\\n    background-color: red;\\r\\n    font-size: 3vw;\\r\\n    padding: 2vw;\\r\\n    font-family: inputCustomFont;\\r\\n    border-style: solid;\\r\\n}\\r\\n\\r\\n.addMailForm #button{\\r\\n    font-family: sansforgetica;\\r\\n    border-style: solid;\\r\\n    padding: 1vw;\\r\\n    background-color: red;\\r\\n    margin: 2vw;\\r\\n}\\r\\n\\r\\n.addMailForm #emailMsgBox{\\r\\n    font-family: inputCustomFont;\\r\\n    font-size: 2vw;\\r\\n    color: red;\\r\\n    margin: 3vw;\\r\\n}\\r\\n.addMailForm #title{\\r\\n    font-family: magazine;\\r\\n    font-size: 5vw;\\r\\n}\\r\\n\\r\\n@media only screen and (max-width: 768px) {\\r\\n    .addMailForm {\\r\\n        margin: 3vw;\\r\\n        line-height: 5vw;\\r\\n    }\\r\\n    \\r\\n    .addMailForm #emailInput{\\r\\n        background-color: red;\\r\\n        width: 100%;\\r\\n        font-size: 5vw;\\r\\n        padding: 2vw;\\r\\n        font-family: inputCustomFont;\\r\\n        border-style: solid;\\r\\n    }\\r\\n    \\r\\n    .addMailForm #button{\\r\\n        font-family: sansforgetica;\\r\\n        border-style: solid;\\r\\n        padding: 1vw;\\r\\n        background-color: red;\\r\\n        margin: 2vw;\\r\\n        font-size: 4vh;\\r\\n    }\\r\\n    \\r\\n    .addMailForm #emailMsgBox{\\r\\n        font-family: inputCustomFont;\\r\\n        font-size: 4vh;\\r\\n        color: red;\\r\\n        margin: 3vw;\\r\\n        line-height: 5vh;\\r\\n    }\\r\\n    .addMailForm #title{\\r\\n        font-family: magazine;\\r\\n        font-size: 14vw;\\r\\n        letter-spacing: 0vh;\\r\\n        line-height: 6vh;\\r\\n    }\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/desktopIcons/icons/mailingList.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/desktopIcons/positions.css":
 /*!******************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/desktopIcons/positions.css ***!
@@ -236,7 +247,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"@media only screen and (max-width: 768px) {\\r\\n    .window {\\r\\n        position: absolute;\\r\\n        width: 79%;\\r\\n        height: 494px;\\r\\n        /* opacity: 96%; */\\r\\n        border-style: solid;\\r\\n        background-color: white;\\r\\n    }\\r\\n\\r\\n    .wHeader {\\r\\n        border-bottom-style: solid;\\r\\n        padding: 4px;\\r\\n        font-size: 5vw;\\r\\n        cursor: grab;\\r\\n        font-family: sansforgetica;\\r\\n    }\\r\\n    .wHeader:hover {\\r\\n        border-bottom-style: solid;\\r\\n        padding: 4px;\\r\\n        font-size: 5vw;\\r\\n        cursor: grab;\\r\\n        font-family: sansforgetica;\\r\\n    }\\r\\n\\r\\n    .title{\\r\\n        color: red;\\r\\n    }\\r\\n\\r\\n    .close{\\r\\n        color: red;\\r\\n    }\\r\\n\\r\\n    .wContent {\\r\\n        max-height: 461px;\\r\\n        overflow-y: scroll;\\r\\n    }\\r\\n    .dragIcon{\\r\\n        width: 16px;\\r\\n        visibility: visible;\\r\\n      }\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/window/windowSm.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"@media only screen and (max-width: 768px) {\\r\\n    .window {\\r\\n        position: absolute;\\r\\n        width: 79%;\\r\\n        height: 494px;\\r\\n        /* opacity: 96%; */\\r\\n        border-style: solid;\\r\\n        background-color: white;\\r\\n    }\\r\\n\\r\\n    .wHeader {\\r\\n        border-bottom-style: solid;\\r\\n        padding: 4px;\\r\\n        font-size: 5vw;\\r\\n        cursor: grab;\\r\\n        font-family: sansforgetica;\\r\\n    }\\r\\n    .wHeader:hover {\\r\\n        border-bottom-style: solid;\\r\\n        padding: 4px;\\r\\n        font-size: 5vw;\\r\\n        cursor: grab;\\r\\n        font-family: sansforgetica;\\r\\n    }\\r\\n\\r\\n    .title{\\r\\n        color: red;\\r\\n    }\\r\\n\\r\\n    .close{\\r\\n        color: red;\\r\\n    }\\r\\n\\r\\n    .wContent {\\r\\n        max-height: 461px;\\r\\n        overflow-y: scroll;\\r\\n        -ms-overflow-style: none;\\r\\n    }\\r\\n    .wContent::-webkit-scrollbar {\\r\\n        display: none;\\r\\n      }\\r\\n    .dragIcon{\\r\\n        width: 16px;\\r\\n        visibility: visible;\\r\\n      }\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/window/windowSm.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -402,6 +413,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _win
 
 /***/ }),
 
+/***/ "./src/desktopIcons/icons/mailingList.css":
+/*!************************************************!*\
+  !*** ./src/desktopIcons/icons/mailingList.css ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!./mailingList.css */ \"./node_modules/css-loader/dist/cjs.js!./src/desktopIcons/icons/mailingList.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/desktopIcons/icons/mailingList.css?");
+
+/***/ }),
+
 /***/ "./src/desktopIcons/icons/mailingList.js":
 /*!***********************************************!*\
   !*** ./src/desktopIcons/icons/mailingList.js ***!
@@ -410,7 +432,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _win
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _window_windowManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../window/windowManager */ \"./src/window/windowManager.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  $('body').append(\"\\n    <div class=\\\"icon\\\" id=\\\"mailList\\\" >\\n        <img src=\\\"desktopIcons/mailingList.svg\\\" alt=\\\"\\\" >\\n        <span class=\\\"iconText\\\" >MailList.eo</span>\\n    </div>\\n    \");\n  $('#mailList').on('click', function () {\n    _window_windowManager__WEBPACK_IMPORTED_MODULE_0__[\"default\"].creaWindow('add to mailing list', 'studioeo mailing list');\n  });\n});\n\n//# sourceURL=webpack:///./src/desktopIcons/icons/mailingList.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _window_windowManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../window/windowManager */ \"./src/window/windowManager.js\");\n/* harmony import */ var _mailingList_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mailingList.css */ \"./src/desktopIcons/icons/mailingList.css\");\n/* harmony import */ var _mailingList_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mailingList_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  $('body').append(\"\\n    <div class=\\\"icon\\\" id=\\\"mailList\\\" >\\n        <img src=\\\"desktopIcons/mailingList.svg\\\" alt=\\\"\\\" >\\n        <span class=\\\"iconText\\\" >MailList.eo</span>\\n    </div>\\n    \");\n  $('#mailList').on('click', function () {\n    _window_windowManager__WEBPACK_IMPORTED_MODULE_0__[\"default\"].creaWindow(\"\\n        <div class=\\\"addMailForm\\\" align=\\\"center\\\">\\n            <span id=\\\"title\\\">ADD TO MAILING LIST</span>\\n            <br>\\n            <input type=\\\"text\\\" id=\\\"emailInput\\\" placeholder=\\\"write here you email\\\" autofocus>\\n            <br><br><br>\\n            <span id=\\\"button\\\">add</span>\\n            <div id=\\\"emailMsgBox\\\"></div>\\n        </div>\\n        \", 'studioeo mailing list', function (w) {\n      $('.addMailForm #button').on('click', function () {\n        $.post('/addMail', {\n          email: $('#emailInput').val()\n        }, function (res) {\n          $('#emailMsgBox').empty().append(function () {\n            if (!res.isValid) {\n              return res.email + ' is not a valid email';\n            }\n\n            if (res.isPresent) {\n              return res.email + ' already in our mailing list =)';\n            }\n\n            if (!res.isPresent && res.isValid) {\n              return res.email + ' added to our mailing list =)';\n            }\n          });\n        });\n      });\n    });\n  });\n});\n\n//# sourceURL=webpack:///./src/desktopIcons/icons/mailingList.js?");
 
 /***/ }),
 
