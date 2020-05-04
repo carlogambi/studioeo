@@ -1,4 +1,5 @@
 
+
 function startP5Program()
 {
      var sketch = function( p ) {
@@ -9,8 +10,8 @@ function startP5Program()
         p.varInit = function()
         {
             
-            W = (window.innerWidth/100)*53;     //Da cambiare secondo la dimensione del canvas in uso su .EO
-            H = 540;     //Come sopra
+            W = ($('#TARGET_ID').width()) - 5;     //Da cambiare secondo la dimensione del canvas in uso su .EO
+            H = 575;     //Come sopra
         
             minColor = 50;    //Filtro di taglio per colore - Base di partenza 50 a tutti
             
