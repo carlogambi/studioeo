@@ -4,9 +4,10 @@ const app = express();
 const http = require('http').createServer(app);
 const path = require('path');
 const mailinglistManager = require('./mailinglist/mailmanager')
+const cors = require('cors')
 
 const PORT = process.env.PORT || 3000;
-
+app.use(cors())
 app.use(express.static(path.resolve(__dirname, 'dist')));
 app.use(express.static(path.resolve(__dirname, 'libs')));
 app.use(express.static(path.resolve(__dirname, 'public')));
