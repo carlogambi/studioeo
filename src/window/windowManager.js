@@ -1,4 +1,4 @@
-import Window from './window'
+import Window from './Window'
 
 export default class WindowManager{
     static windowList = [];

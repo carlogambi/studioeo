@@ -1,4 +1,4 @@
-import WindowManager from '../../window/windowManager';
+import WindowManager from '../../window/WindowManager';
 import globals from '../../globals/globals';
 import exhibitionWindowButtons from '../../buttons/exhibitionWindowButtons';
 import './exhibitions.css'
