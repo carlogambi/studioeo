@@ -1,0 +1,20 @@
+.imgAbout{
+    width: 70%;
+}
+.textAbout{
+    font-family: inputCustomFont;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .imgAbout{
+        width: 100%;
+    }
+    .textAbout{
+        font-size: 3vw;
+        font-family: inputCustomFont;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }    
+}

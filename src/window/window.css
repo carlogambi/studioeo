@@ -1,0 +1,40 @@
+
+.window{
+  position: absolute;
+  width: 59%;
+  height: 655px;
+  /* opacity: 96%; */
+  border-style: solid;
+  background-color: white;
+  }
+  
+  .wHeader{
+    border-bottom-style: solid;
+    padding: 4px;
+    font-size: 2vw;
+    cursor: grab;
+    font-family: sansforgetica;
+  }
+  .wHeader:hover{
+    color: white;
+    background-color: red;
+    font-family: sansforgetica;
+  }
+  .close{
+    float: right;
+    margin-right: 2px;
+    cursor: context-menu;
+    font-family: sansforgetica;
+  }
+  
+  
+      
+    .wContent{
+      max-height: 584px;
+      overflow: auto;
+    }
+
+  .dragIcon{
+    visibility: hidden;
+    width: 0%;
+  }

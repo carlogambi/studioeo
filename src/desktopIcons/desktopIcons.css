@@ -1,0 +1,24 @@
+.icon{
+    position: absolute;
+    width: 118px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    padding: 3px;
+  }
+  
+  .icon:hover{
+    border-style: dashed;
+    border-color: red;
+    padding: 3px;
+  }
+  .icon img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .icon span{
+    text-shadow: -3px 0 white, 0 3px white, 4px 0 white, 0 -3px white;    font-weight: 900;
+      font-size: 72%;
+      padding: 2px;
+  }

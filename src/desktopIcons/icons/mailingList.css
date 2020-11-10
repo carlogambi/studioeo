@@ -1,0 +1,75 @@
+.addMailForm {
+    margin: 3vw;
+    line-height: 5vw;
+}
+
+.addMailForm #emailInput{
+    background-color: red;
+    font-size: 3vw;
+    padding: 2vw;
+    font-family: inputCustomFont;
+    border-style: solid;
+}
+
+.addMailForm #button{
+    font-family: sansforgetica;
+    border-style: solid;
+    padding: 1vw;
+    background-color: red;
+    margin: 2vw;
+}
+
+.addMailForm #emailMsgBox{
+    font-family: inputCustomFont;
+    font-size: 2vw;
+    color: red;
+    margin: 3vw;
+}
+.addMailForm #title{
+    font-family: magazine;
+    font-size: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .addMailForm {
+        margin: 3vw;
+        line-height: 5vw;
+    }
+    
+    .addMailForm #emailInput{
+        background-color: red;
+        width: 100%;
+        font-size: 5vw;
+        padding: 2vw;
+        font-family: inputCustomFont;
+        border-style: solid;
+        -webkit-user-select: initial;
+        -khtml-user-select: initial;
+        -moz-user-select: initial;
+        -ms-user-select: initial;
+        user-select: initial;
+    }
+    
+    .addMailForm #button{
+        font-family: sansforgetica;
+        border-style: solid;
+        padding: 1vw;
+        background-color: red;
+        margin: 2vw;
+        font-size: 4vh;
+    }
+    
+    .addMailForm #emailMsgBox{
+        font-family: inputCustomFont;
+        font-size: 4vh;
+        color: red;
+        margin: 3vw;
+        line-height: 5vh;
+    }
+    .addMailForm #title{
+        font-family: magazine;
+        font-size: 14vw;
+        letter-spacing: 0vh;
+        line-height: 6vh;
+    }
+}

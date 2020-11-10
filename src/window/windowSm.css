@@ -1,0 +1,46 @@
+@media only screen and (max-width: 768px) {
+    .window {
+        position: absolute;
+        width: 79%;
+        height: 494px;
+        /* opacity: 96%; */
+        border-style: solid;
+        background-color: white;
+    }
+
+    .wHeader {
+        border-bottom-style: solid;
+        padding: 4px;
+        font-size: 5vw;
+        cursor: grab;
+        font-family: sansforgetica;
+    }
+    .wHeader:hover {
+        border-bottom-style: solid;
+        padding: 4px;
+        font-size: 5vw;
+        cursor: grab;
+        font-family: sansforgetica;
+    }
+
+    .title{
+        color: red;
+    }
+
+    .close{
+        color: red;
+    }
+
+    .wContent {
+        max-height: 461px;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+    }
+    .wContent::-webkit-scrollbar {
+        display: none;
+      }
+    .dragIcon{
+        width: 16px;
+        visibility: visible;
+      }
+}

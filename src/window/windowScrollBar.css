@@ -1,0 +1,26 @@
+
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 11px;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+      border-style: solid;
+      border-width: thick;
+      border-color: white; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: red;
+      border-style: solid;
+      border-width: thick;
+      border-color: white; 
+  }

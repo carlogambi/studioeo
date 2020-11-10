@@ -1,0 +1,20 @@
+@font-face {
+    font-family: sansforgetica;
+    src: url("fonts/SansForgetica.woff");
+}
+@font-face {
+    font-family: inputCustomFont;
+    src: url("fonts/Input.ttf");
+}
+@font-face {
+    font-family: magazine;
+    src: url("fonts/Magazine.ttf");
+}
+@font-face {
+    font-family: linuxLibertine;
+    src: url("fonts/Lin-Libertine.ttf");
+}
+@font-face {
+    font-family: linuxLibertineItalic;
+    src: url("fonts/LinuxLibertine.ttf");
+}

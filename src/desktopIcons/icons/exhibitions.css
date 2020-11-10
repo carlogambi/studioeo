@@ -1,0 +1,16 @@
+
+/* .exhibWinitemList:nth-of-type(1){
+    margin-top: 100px;
+    }
+     */
+    .exhibWinitemList {
+        width: 54%;
+        padding: 2vw;
+        margin: auto;
+        transition: 0.3s;
+    }
+    
+    .exhibWinitemList:hover {
+        width: 70%;
+    }
+    

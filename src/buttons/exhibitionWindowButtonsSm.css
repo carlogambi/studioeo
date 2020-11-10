@@ -1,0 +1,36 @@
+@media only screen and (max-width: 768px) {
+    .exhibImg{
+        width: 100%;
+        margin-top: 3vw;
+    }
+    .exhibDwnld{
+        font-family: magazine;
+        color: black;
+        text-decoration: none;
+        font-size: 2vw;
+    }
+    .exhibName{
+        font-family: magazine;
+        font-size: xxx-large;
+        margin-bottom: -1vw;
+    }
+    .exhibInfo{
+        font-family: linuxLibertine;
+        font-size: 5vw;
+    }
+    .exhibCaption{
+        font-family: linuxLibertineItalic;
+        margin-top: -1em;
+        font-size: 4vw;
+    }
+    .exhibMainImg{
+        width: 100%;
+    }
+    .exhibText{
+        text-align: justify;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-family: inputCustomFont;
+        font-size: 3vw;
+    }
+}
